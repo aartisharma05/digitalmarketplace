@@ -12,11 +12,17 @@ const LandingPage = () => {
       </header>
       <section className="features flex flex-col justify-center">
         <div className="flex gap-3 m-2 items center">
-          {Loptions.map((option, index) => (
+          {/* {Loptions.map((option, index) => (
             <div key={index} className="bg-gray-400 shadow-md p-3">
               <h2 className="text-xl font-semibold mb-4">{option}</h2>
             </div>
-          ))}
+          ))} */}
+          <span className="flex justify-between items-center">
+            <p>Facility Management</p>
+            <Link to="/shopbycat" className="text-blue-600">
+              Shop by Category
+            </Link>
+          </span>
         </div>
       </section>
 
